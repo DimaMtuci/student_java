@@ -23,11 +23,10 @@ class DataSampleTest {
 
         double[] normalized = sample.getNormalizedFeatures();
         
-        // Проверяем, что нормализация посчиталась верно (от 0.0 до 1.0)
+        
         assertEquals(0.0, normalized[0]);
         assertEquals(1.0, normalized[2]);
-        
-        // Проверяем инвариант: оригинальный массив внутри класса НЕ изменился!
+
         assertEquals(10.0, sample.getFeatures()[0]);
     }
 }
